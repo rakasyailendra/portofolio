@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+================================================================================
+  LAYER BASE: Fondasi dan Konfigurasi Tema
+================================================================================
+*/
+@layer base {
+  /* --- Variabel Warna untuk Light & Dark Mode --- */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%; /* Warna teks utama sedikit lebih gelap untuk kontras */
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 47.4% 11.2%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 210 20% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 215 20.2% 65.1%;
+  }
+
+  /* --- Pengaturan Dasar Global (Best Practice) --- */
+  * {
+    @apply border-border; /* Menerapkan warna border default ke semua elemen */
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  }
+
+  code {
+    font-family: 'Fira Code', source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  }
+}
+
+/*
+================================================================================
+  LAYER COMPONENTS: Komponen Kustom
+================================================================================
+*/
+@layer components {
+  /* --- [ORIGINAL] Kelas Gradien Anda (Tetap Ada) --- */
+  .color-base-ghaly {
+    @apply bg-gradient-to-r from-teal-500 to-violet-300;
+  }
+  .color-yellow-ghaly {
+    @apply text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-orange-200 via-amber-500 to-neutral-600;
+  }
+  .color-ghaly {
+    @apply bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-teal-500 via-teal-400 to-violet-600;
+  }
+  .color-secondary-ghaly {
+    @apply bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-teal-500 via-teal-400 to-violet-300;
+  }
+  .color-short-ghaly {
+    @apply bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-teal-500 via-violet-500 to-teal-500;
+  }
+
+  /* --- [DIPERBARUI] Gradien Tosca, Biru, Ungu --- */
+  .color-purple-gradient {
+    @apply bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600;
+  }
+
+  /* --- [BARU] Gradien Biru Gelap ke Tosca --- */
+  .gradient-blue-tosca {
+    @apply bg-gradient-to-r from-blue-700 via-cyan-500 to-teal-400;
+  }
+  
+  /* --- [BARU] Gradien Tosca ke Biru --- */
+  .gradient-tosca-biru {
+    @apply bg-gradient-to-r from-teal-400 to-blue-500;
+  }
+
+
+  /* --- [BARU] Opsi Gradien Minimalis & Modern --- */
+
+  /* 1. Gradien Latar Belakang Halus (Sangat Minimalis) */
+  .gradient-bg-subtle {
+    @apply bg-gradient-to-br from-white via-slate-50 to-gray-100;
+  }
+  .dark .gradient-bg-subtle {
+    @apply bg-gradient-to-br from-gray-950 via-gray-900 to-black;
+  }
+
+  /* 2. Gradien Aurora (Cahaya Lembut & Modern) */
+  .gradient-bg-aurora {
+    background-color: hsl(var(--background));
+    background-image: radial-gradient(at 27% 37%, hsla(215, 98%, 61%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 97% 21%, hsla(29, 93%, 68%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 75% 86%, hsla(165, 76%, 61%, 0.1) 0px, transparent 50%);
+  }
+  .dark .gradient-bg-aurora {
+    background-color: hsl(var(--background));
+    background-image: radial-gradient(at 27% 37%, hsla(215, 98%, 61%, 0.2) 0px, transparent 50%),
+      radial-gradient(at 97% 21%, hsla(29, 93%, 68%, 0.15) 0px, transparent 50%),
+      radial-gradient(at 75% 86%, hsla(165, 76%, 61%, 0.15) 0px, transparent 50%);
+  }
+
+  /* 3. Gradien Profesional (Bersih & Sejuk) */
+  .gradient-bg-cool {
+    @apply bg-gradient-to-b from-white to-cyan-50;
+  }
+  .dark .gradient-bg-cool {
+    @apply bg-gradient-to-b from-slate-900 to-[#0c1a24];
+  }
+}
+
+/*
+================================================================================
+  LAYER UTILITIES: Kelas Bantuan Kustom
+================================================================================
+*/
+@layer utilities {
+  /* --- [ORIGINAL] Utilitas Anda (Tetap Ada) --- */
+  .font-ghaly {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  }
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  .hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(61, 224, 102);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  .line-effect .hover-underline-animation::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .ghaly-effect {
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+  }
+  .clear-ghaly-effect {
+    cursor: pointer;
+    transition: 0.5s;
+    text-shadow: 0;
+  }
+  .paragraph-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .paragraph-overflow:hover {
+    overflow: visible;
+    white-space: normal;
+    transition: all 0.3s;
+  }
+
+  /* --- [DIPERBARUI] Efek Neon Pink --- */
+  .neon-text-pink {
+    color: #ffe4e6; /* Warna teks pink sangat terang */
+    text-shadow: 0 0 5px #ec4899,   /* pink-500 */
+                 0 0 10px #ec4899,
+                 0 0 20px #db2777,  /* pink-600 */
+                 0 0 40px #db2777,
+                 0 0 60px #be185d;  /* pink-700 */
+  }
+
+  /* --- [BARU] Efek Neon Tosca --- */
+  .neon-text-tosca {
+    color: #e0f2f1; /* Warna teks tosca sangat terang */
+    text-shadow: 0 0 5px #4dd0e1,   /* cyan-400 */
+                 0 0 10px #4dd0e1,
+                 0 0 20px #26a69a,  /* teal-400 */
+                 0 0 40px #26a69a,
+                 0 0 60px #00796b;  /* teal-600 */
+  }
+
+  /* --- [BARU] Utilitas Tambahan & Peningkatan --- */
+
+  /* Animasi underline yang lebih simpel dan menggunakan warna tema */
+  .hover-underline-primary {
+    @apply relative inline-block;
+  }
+  .hover-underline-primary::after {
+    content: '';
+    @apply absolute bottom-0 left-0 h-[2px] w-full origin-bottom-left scale-x-0 bg-primary transition-transform duration-300 ease-out;
+  }
+  .hover-underline-primary:hover::after {
+    @apply scale-x-100;
+  }
+
+  /* Efek 'glow' yang lebih halus dan terikat dengan warna tema */
+  .glow-on-hover {
+    @apply transition-all duration-300;
+  }
+  .glow-on-hover:hover {
+    @apply text-primary-foreground;
+    text-shadow: 0 0 8px hsl(var(--primary-foreground) / 0.8);
+  }
+  .dark .glow-on-hover:hover {
+     text-shadow: 0 0 8px hsl(var(--primary) / 0.8);
+  }
+}
