@@ -127,7 +127,7 @@ export const aboutConfig: dataAbout = {
           title: "Devfest 2024",
           description: "Google Developers Group",
           imgLink:
-            "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/devfest.png", // [PERBAIKAN] Tanda kutip ' diganti menjadi "
+            "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/devfest'.png",
           directLink:
             "https://drive.google.com/file/d/1PYslC2z8FPfmRsw3cExKSlLtY6CiaX-B/view?usp=sharing",
         },
@@ -335,14 +335,6 @@ export const aboutConfig: dataAbout = {
       height: 48,
       alt: "gns3",
       title: "GNS3",
-    },
-    {
-      style: "w-11 h-11 object-contain",
-      src: "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/netbeans-logo.png", // [PERBAIKAN] Menggunakan nama file yang benar
-      width: 48,
-      height: 48,
-      alt: "NetBeans IDE",
-      title: "NetBeans IDE",
     },
   ],
 };

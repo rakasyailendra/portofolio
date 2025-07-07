@@ -10,7 +10,6 @@ export default function GhalyPhoto() {
       {!imageLoaded && (
         <Skeleton className="rounded-md w-60 h-[370px] md:w-[315px]" />
       )}
-
       <Image
         className={aboutConfig.photo.style}
         src={aboutConfig.photo.src}
