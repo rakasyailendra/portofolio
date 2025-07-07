@@ -7,7 +7,7 @@ import { GiBearFace } from "react-icons/gi";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoLogoYoutube } from "react-icons/io";
 import { IconType } from "react-icons/lib";
-import { MdAnimation } from "react-icons/md"; 
+import { MdAnimation } from "react-icons/md";
 import {
   SiAdobeaftereffects,
   SiAdobeillustrator,
@@ -62,7 +62,7 @@ export const projectsConfig: projectTypes = {
       directLink:
         "https://github.com/rakasyailendra/JACKDULS-ADMIN",
     },
- {
+    {
       title: "Employee Attendance and Payroll Application",
       imgSrc:
         "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/framepbo2.png",
@@ -79,9 +79,9 @@ export const projectsConfig: projectTypes = {
     {
       title: "Official Tourism & Culinary Portal of Sidoarjo Regency",
       imgSrc:
-       "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/sda3.png",
+        "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/sda3.png",
       description:
-        "A Special Project from  Dicoding Indonesia. Website that presents a comprehensive guide to natural tourist destinations, historical cultural sites, and authentic Sidoarjo cuisine through interactive multimedia content..",
+        "A Special Project from Dicoding Indonesia. Website that presents a comprehensive guide to natural tourist destinations, historical cultural sites, and authentic Sidoarjo cuisine through interactive multimedia content..",
       technologies: [
         { icon: SiHtml5, iconName: "HTML5" },
         { icon: SiCss3, iconName: "CSS3" },
@@ -97,7 +97,7 @@ export const projectsConfig: projectTypes = {
         "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/destar.png",
       description:
         "UI/UX A Digital Advocacy Platform for Informatics Students, designed to streamline academic services by integrating student information, UKT appeals, and complaint management into one unified web system, enhancing accessibility, transparency, and administrative efficiency",
-    technologies: [
+      technologies: [
         { icon: FiFigma, iconName: "Figma" },
         { icon: SiAdobeillustrator, iconName: "Adobe Illustrator" },
       ],
@@ -128,8 +128,8 @@ export const projectsConfig: projectTypes = {
       description:
         " Prototype For Realtime Website Collaboration with Jackduls Partner — Building a Seamless and Dynamic Web Experience for JACKDULS",
       technologies: [
-         { icon: FiFigma, iconName: "Figma" },
-         { icon: SiAdobeillustrator, iconName: "Adobe Illustrator" },
+        { icon: FiFigma, iconName: "Figma" },
+        { icon: SiAdobeillustrator, iconName: "Adobe Illustrator" },
       ],
       date: "Juni 2025",
       directLink:
@@ -141,23 +141,22 @@ export const projectsConfig: projectTypes = {
         "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/fe1.png",
       description:
         "A minimalist and elegant Website for managing personal reading collections. Features include book tracking, completion status, and real-time search..",
-          technologies: [
+      technologies: [
         { icon: SiJavascript, iconName: "JavaScript" },
         { icon: SiHtml5, iconName: "HTML5" },
         { icon: SiCss3, iconName: "CSS3" },
       ],
-      
       date: "Juni, 2025",
       directLink: "https://github.com/rakasyailendra/bookshelf-FE",
     },
     {
       title: "Explore Europe – Bootstrap Tourism Demo Website",
       imgSrc:
-       "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/boostrap.png",
+        "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/boostrap.png",
       description:
         "This demo website is designed to provide a modern, responsive, and informative user experience for showcasing European destinations. Built using Bootstrap, it demonstrates how a well-structured layout, interactive components, and visually engaging content can come together to promote tourism effectively. From curated travel news to user feedback forms, this site represents the foundation for creating a full-fledged travel platform tailored to global exploration",
-          technologies: [
-       { icon: SiHtml5, iconName: "HTML5" },
+      technologies: [
+        { icon: SiHtml5, iconName: "HTML5" },
         { icon: SiJavascript, iconName: "JavaScript" },
         { icon: SiCss3, iconName: "CSS3" },
       ],
@@ -169,8 +168,8 @@ export const projectsConfig: projectTypes = {
       imgSrc:
         "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/profiles3.png",
       description:
-        "Personal Portfolio of Rakha Syailendra with Responsive Website, Attractive Design,  and Real-world Development Experiences.",
-          technologies: [
+        "Personal Portfolio of Rakha Syailendra with Responsive Website, Attractive Design, and Real-world Development Experiences.",
+      technologies: [
         { icon: SiNextdotjs, iconName: "Next" },
         { icon: FaReact, iconName: "React" },
         { icon: SiTypescript, iconName: "TypeScript" },
@@ -185,14 +184,13 @@ export const projectsConfig: projectTypes = {
     {
       title: "Super Admin Dashboard",
       imgSrc:
-       "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/ads3.png",
+        "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/ads3.png",
       description:
         "UI/UX prototype Project Created in Collaboration With My Patner Informatics. Advocacy System is a web-based platform designed to facilitate the management of students' academic and non-academic advocacy information..",
       technologies: [
         { icon: FiFigma, iconName: "Figma" },
         { icon: SiAdobeillustrator, iconName: "Adobe Illustrator" },
       ],
-      
       date: "Juni 2025",
       directLink: "https://www.figma.com/proto/jmyZakaTVk3ntlRullpwpi/Advokasi-Himpunan-Informatika?page-id=0%3A1&node-id=4615-5783&p=f&viewport=-8%2C255%2C0.06&t=bAvFGGg9cQm8HSPt-1&scaling=contain&content-scaling=fixed",
     },
@@ -202,7 +200,7 @@ export const projectsConfig: projectTypes = {
         "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/sensor.png",
       description:
         "Hand Gesture Recognition with Python & MediaPipe is a real-time computer vision project that detects and tracks hand movements using a webcam. Built with OpenCV and MediaPipe, the system identifies whether the detected hand is the left or right hand, counts the number of raised fingers, and displays the result directly on the video feed. ",
-           technologies: [
+      technologies: [
         { icon: SiPython, iconName: "Python" },
         { icon: SiGooglecolab, iconName: "Google Colab" },
         { icon: FaHandPaper, iconName: "MediaPipe" },
@@ -210,7 +208,7 @@ export const projectsConfig: projectTypes = {
       ],
       date: "Agustus 2024",
       directLink:
-        "hhttps://github.com/rakasyailendra/finger-five-test",
+        "https://github.com/rakasyailendra/finger-five-test", // [PERBAIKAN] Typo 'hhttps' dihapus
     },
     {
       title: "RNN - Sentiment Analysis on Public Response to Social and Physical Distancing during COVID-19",
@@ -233,22 +231,20 @@ export const projectsConfig: projectTypes = {
         "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/wireframe.png",
       description:
         "Wireframe Design showcases the User interface and user experience layout for an employee attendance and salary slip application. The interface includes features for employee check-in/check-out, displaying the work shift, and managing attendance records, along with a login page for the system.",
-        technologies: [
+      technologies: [
         { icon: FiFigma, iconName: "Figma" },
         { icon: SiAdobeillustrator, iconName: "Adobe Illustrator" },
       ],
-      
       date: "Juni 2025",
       directLink: "https://www.figma.com/design/IUw8UnyBoI1UMJhSJDtvrY/Aset-PBO_APK-Absensi---Slip-Gaji?node-id=0-1",
     },
-
     {
       title: "Computer Network Security firewall",
       imgSrc:
         "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/firewall.png",
       description:
         "As part of the Final Project for the Computer Networks Class, I was responsible for configuring the Firewall within a simulated Network infrastructure for a Boarding House, using MikroTik Router, GNS3, and Winbox.",
-     technologies: [
+      technologies: [
         { icon: FaServer, iconName: "GNS3" },
         { icon: BsTerminalFill, iconName: "WinBox" },
         { icon: SiVmware, iconName: "VMware" },
@@ -256,8 +252,7 @@ export const projectsConfig: projectTypes = {
       date: "Juni, 2025",
       directLink: "https://github.com/rakasyailendra/Network-Topologhy-For-Based-Boarding-House-System",
     },
-{
-
+    {
       title: "SAY NO TO DRUGS. Selamatkan Generasi, Selamatkan Bangsa",
       imgSrc:
         "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/education.png",
@@ -270,8 +265,8 @@ export const projectsConfig: projectTypes = {
         { icon: AiFillVideoCamera, iconName: "Video Project" },
         { icon: IoLogoYoutube, iconName: "Youtube Project" },
       ],
-      date: " ", 
-      directLink: "https://drive.google.com/file/d/1D0PUO8ywYYLvtOMH0yuUXSDABwFgKIa0/view?usp=sharing", // Typo diperbaiki
+      date: " ",
+      directLink: "https://drive.google.com/file/d/1D0PUO8ywYYLvtOMH0yuUXSDABwFgKIa0/view?usp=sharing",
     },
   ],
 };
