@@ -330,7 +330,7 @@ export const aboutConfig: dataAbout = {
     },
     {
       style: "w-10 md:w-11",
-      src: "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/gns.png",
+      src: "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/GNS3.png",
       width: 48,
       height: 48,
       alt: "gns3",
