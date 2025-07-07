@@ -1,7 +1,7 @@
 
 import { AiFillVideoCamera } from "react-icons/ai";
-import { BsBarChartFill, BsSitemap, BsTerminalFill } from "react-icons/bs";
-import { FaDatabase, FaHandPaper, FaJava, FaReact, FaServer } from "react-icons/fa";
+import { BsBarChartFill, BsTerminalFill } from "react-icons/bs";
+import { FaDatabase, FaHandPaper, FaJava, FaReact, FaServer, FaProjectDiagram } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { GiBearFace } from "react-icons/gi";
 import { HiOutlineMail } from "react-icons/hi";
@@ -207,8 +207,7 @@ export const projectsConfig: projectTypes = {
         { icon: SiOpencv, iconName: "OpenCV" },
       ],
       date: "Agustus 2024",
-      directLink:
-        "https://github.com/rakasyailendra/finger-five-test", // [PERBAIKAN] Typo 'hhttps' dihapus
+      directLink: "https://github.com/rakasyailendra/finger-five-test",
     },
     {
       title: "RNN - Sentiment Analysis on Public Response to Social and Physical Distancing during COVID-19",
@@ -257,7 +256,7 @@ export const projectsConfig: projectTypes = {
       imgSrc:
         "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/education.png",
       description:
-        "Animated Video aims to Raise Awareness Among Youth and the General Public about the dangers of Drug Abuse. Through engaging visuals and educational content, it explains the harmful effects of drugs on vital organs, introduces commonly known types of narcotics, and presents alarming statistics on drug-related deaths in Indonesia.",
+        "Animated Video aims to Raise Awareness Among Youth and a General Public about the dangers of Drug Abuse. Through engaging visuals and educational content, it explains the harmful effects of drugs on vital organs, introduces commonly known types of narcotics, and presents alarming statistics on drug-related deaths in Indonesia.",
       technologies: [
         { icon: SiAdobepremierepro, iconName: "Adobe Premiere Pro" },
         { icon: SiAdobeaftereffects, iconName: "Adobe After Effects" },
@@ -265,7 +264,7 @@ export const projectsConfig: projectTypes = {
         { icon: AiFillVideoCamera, iconName: "Video Project" },
         { icon: IoLogoYoutube, iconName: "Youtube Project" },
       ],
-      date: " ",
+      date: "Juli 2025",
       directLink: "https://drive.google.com/file/d/1D0PUO8ywYYLvtOMH0yuUXSDABwFgKIa0/view?usp=sharing",
     },
   ],
