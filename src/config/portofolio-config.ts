@@ -1,6 +1,6 @@
-
+// [PERBAIKAN] Semua impor dirapikan dan ikon yang menyebabkan error (BsSitemap) dihapus
 import { AiFillVideoCamera } from "react-icons/ai";
-import { BsBarChartFill, BsSitemap, BsTerminalFill } from "react-icons/bs";
+import { BsBarChartFill, BsTerminalFill } from "react-icons/bs";
 import { FaDatabase, FaHandPaper, FaJava, FaProjectDiagram, FaPuzzlePiece, FaReact, FaServer } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { GiBearFace } from "react-icons/gi";
@@ -29,7 +29,7 @@ import {
   SiVercel,
   SiVmware,
 } from "react-icons/si";
-import { TbApi, TbBrandReactNative } from "react-icons/tb"; 
+import { TbApi, TbBrandReactNative } from "react-icons/tb";
 
 export interface projectTypes {
   dataProjects: Array<{
@@ -97,7 +97,7 @@ export const projectsConfig: projectTypes = {
       imgSrc:
         "https://raw.githubusercontent.com/rakasyailendra/portofolio/main/public/Frame%203.png",
       description:
-      "An E-commerce Optimization Platform for JACKDULS, a local fashion brand, aiming to enhance digital presence and improve brand competitiveness by creating a responsive, interactive web profile to strengthen brand identity and reach a wider audience in the modern digital era.",
+        "An E-commerce Optimization Platform for JACKDULS, a local fashion brand, aiming to enhance digital presence and improve brand competitiveness by creating a responsive, interactive web profile to strengthen brand identity and reach a wider audience in the modern digital era.",
       technologies: [
         { icon: SiPhp, iconName: "PHP Native" },
         { icon: SiHtml5, iconName: "HTML5" },
@@ -148,6 +148,7 @@ export const projectsConfig: projectTypes = {
       technologies: [
         { icon: FiFigma, iconName: "Figma" },
         { icon: SiAdobeillustrator, iconName: "Adobe Illustrator" },
+        { icon: FaProjectDiagram, iconName: "Draw.io" },
       ],
       date: "Mei 2025",
       directLink:
