@@ -6,7 +6,7 @@ export default function ProjectsDesc() {
     <div className="font-ghaly px-5 lg:px-0 mt-6 md:mt-12">
       <Reveal delay={0.2} duration={0.5}>
         <h2 className="text-3xl lg:text-5xl font-bold pb-3 text-transparent bg-clip-text color-ghaly">
-         My Projects
+         My Portofolio 
         </h2>
       </Reveal>
       <Reveal delay={0.3} duration={0.5}>
