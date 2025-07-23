@@ -2,7 +2,7 @@ import ProjectsDesc from "../components/Atoms/Descriptions/ProjectsDesc";
 import CardProject from "../components/Molecules/Cards/Card-Project";
 import ProjectsContainer from "../components/Templates/Containers/Projects-Page/ProjectsContainer";
 import ProjectsWrapper from "../components/Templates/Wrappers/Projects-Wrappers/ProjectsWrapper";
-import { projectsConfig } from "../config/project-config";
+import { projectsConfig } from "../config/portofolio-config";
 
 export default function Projects() {
   return (
