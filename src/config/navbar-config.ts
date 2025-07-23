@@ -15,11 +15,11 @@ export const navConfig: navType = [
     page: "Home",
   },
   {
-    href: "/projects",
-    page: "Projects",
+
+    href: "/portofolio",
+    page: "Portofolio",
   },
   {
-
     href: "/contact",
     page: "Contact",
   },
